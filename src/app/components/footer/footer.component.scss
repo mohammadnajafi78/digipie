@@ -1,0 +1,60 @@
+@import "../../theme.scss";
+$primary_color: mat-color($primary, default);
+$primary_darker: mat-color($primary, 800);
+.footer {
+  display: flex;
+  justify-content: center;
+  background-color: $primary_color;
+  padding: 30px 0px;
+  color: #ffffffff;
+  h2 {
+    margin-bottom: 4px;
+  }
+}
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.about {
+  font-size: 13px;
+  line-height: 1.75;
+}
+.recent-post {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+  font-size: 13px;
+  li {
+    margin: 6px 0px;
+  }
+}
+.support-icon {
+  display: flex;
+}
+.support-avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 40px; /* половина ширины и высоты */
+  margin: 10px;
+  margin-right: 0px;
+}
+.support-des {
+  font-size: 11px;
+}
+.copy-right {
+  background-color: $primary_darker;
+  height: 60px;
+  color: #ffffffff;
+  display: flex;
+  align-items: center;
+  a {
+    font-weight: 600;
+    text-decoration: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .footer-item {
+    margin-top: 30px;
+  }
+}

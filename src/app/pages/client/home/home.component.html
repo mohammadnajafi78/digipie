@@ -1,0 +1,660 @@
+<div>
+  <div [style.height]="isSmallScreen ? '40vh' : '60vh'">
+    <app-header></app-header>
+    <swiper [config]="slideConfig" class="slider">
+      <div class="swiper-slide">
+        <img src="../../../../assets/img/01.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img src="../../../../assets/img/03.jpg" alt="" />
+      </div>
+      <div class="swiper-slide">
+        <img src="../../../../assets/img/04.jpg" alt="" />
+      </div>
+      <div class="swiper-slide">
+        <img src="../../../../assets/img/05.jpg" alt="" />
+      </div>
+      <!-- Add Pagination -->
+    </swiper>
+  </div>
+
+  <div class="search-container">
+    <mat-card class="col-sm-8 col-12">
+      <div class="row">
+        <div class="col-3">
+          <img src="../../../../assets/img/search-girl-illustration (1).jpg" />
+        </div>
+        <div class="col-sm-8 col-12">
+          <h4>هزاران فیلم و سریال و کتاب و بازی</h4>
+          <mat-form-field class="col-12" appearance="outline">
+            <input placeholder="کتاب ها و فیلم ها و ..." type="text" matInput />
+            <mat-icon matSuffix> search </mat-icon>
+          </mat-form-field>
+          <h4>یا یک دسته بندی انتخاب کنید :</h4>
+          <div class="col-sm-7 col-12 search-btn">
+            <button mat-raised-button>فیلم ها</button>
+            <button mat-raised-button>سریال ها</button>
+            <button mat-raised-button>کتاب ها</button>
+            <button mat-raised-button>بازی ها</button>
+          </div>
+        </div>
+      </div>
+    </mat-card>
+  </div>
+  <div class="main">
+    <div class="movie-container col-sm-7 col-12">
+      <div>
+        <mat-tab-group>
+          <mat-tab label="انیمیشن">
+            <div class="tab-container">
+              <div class="tab-movie">
+                <div class="col-sm-6 col-12">
+                  <img
+                    style="width: 100%; height: 230px"
+                    src="../../../../assets/img/10.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="col-sm-6 col-12">
+                  <h3>لورم ایپسوم متن ساختگی با تولید</h3>
+                  <div>
+                    <span class="director"> لورم ایپسوم </span>
+                    <span class="date"> 27 مرداد 1399 </span>
+                  </div>
+                  <div class="col-6 tab-movie-detail">
+                    <div class="count">
+                      <div>16</div>
+                      <mat-icon>thumb_up</mat-icon>
+                    </div>
+
+                    <div class="count">
+                      <div>12</div>
+                      <mat-icon> mode_comment</mat-icon>
+                    </div>
+
+                    <div class="count">
+                      <div>1500</div>
+                      <mat-icon>remove_red_eye</mat-icon>
+                    </div>
+                  </div>
+                  <div class="summary">
+                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و
+                    با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه
+                    و مجله
+                  </div>
+                </div>
+              </div>
+
+              <div class="tab-movie">
+                <div class="col-sm-6 col-12">
+                  <img
+                    style="width: 100%; height: 230px"
+                    src="../../../../assets/img/06.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="col-sm-6 col-12">
+                  <h3>لورم ایپسوم متن ساختگی با تولید</h3>
+                  <div>
+                    <span class="director"> لورم ایپسوم </span>
+                    <span class="date"> 27 مرداد 1399 </span>
+                  </div>
+                  <div class="col-6 tab-movie-detail">
+                    <div class="count">
+                      <div>16</div>
+                      <mat-icon>thumb_up</mat-icon>
+                    </div>
+
+                    <div class="count">
+                      <div>12</div>
+                      <mat-icon> mode_comment</mat-icon>
+                    </div>
+
+                    <div class="count">
+                      <div>1500</div>
+                      <mat-icon>remove_red_eye</mat-icon>
+                    </div>
+                  </div>
+                  <div class="summary">
+                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و
+                    با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه
+                    و مجله
+                  </div>
+                </div>
+              </div>
+
+              <div class="tab-movie">
+                <div class="col-sm-6 col-12">
+                  <img
+                    style="width: 100%; height: 230px"
+                    src="../../../../assets/img/03.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="col-sm-6">
+                  <h3>لورم ایپسوم متن ساختگی با تولید</h3>
+                  <div>
+                    <span class="director"> لورم ایپسوم </span>
+                    <span class="date"> 27 مرداد 1399 </span>
+                  </div>
+                  <div class="col-6 tab-movie-detail">
+                    <div class="count">
+                      <div>16</div>
+                      <mat-icon>thumb_up</mat-icon>
+                    </div>
+
+                    <div class="count">
+                      <div>12</div>
+                      <mat-icon> mode_comment</mat-icon>
+                    </div>
+
+                    <div class="count">
+                      <div>1500</div>
+                      <mat-icon>remove_red_eye</mat-icon>
+                    </div>
+                  </div>
+                  <div class="summary">
+                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و
+                    با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه
+                    و مجله
+                  </div>
+                </div>
+              </div>
+            </div>
+          </mat-tab>
+          <mat-tab label="خانوادگی">
+            <div class="tab-container">
+              <div class="tab-movie">
+                <div class="col-sm-6 col-12">
+                  <img
+                    style="width: 100%; height: 230px"
+                    src="../../../../assets/img/09.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="col-sm-6 col-12">
+                  <h3>لورم ایپسوم متن ساختگی با تولید</h3>
+                  <div>
+                    <span class="director"> لورم ایپسوم </span>
+                    <span class="date"> 27 مرداد 1399 </span>
+                  </div>
+                  <div class="col-6 tab-movie-detail">
+                    <div class="count">
+                      <div>16</div>
+                      <mat-icon>thumb_up</mat-icon>
+                    </div>
+
+                    <div class="count">
+                      <div>12</div>
+                      <mat-icon> mode_comment</mat-icon>
+                    </div>
+
+                    <div class="count">
+                      <div>1500</div>
+                      <mat-icon>remove_red_eye</mat-icon>
+                    </div>
+                  </div>
+                  <div class="summary">
+                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و
+                    با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه
+                    و مجله
+                  </div>
+                </div>
+              </div>
+
+              <div class="tab-movie">
+                <div class="col-sm-6 col-12">
+                  <img
+                    style="width: 100%; height: 230px"
+                    src="../../../../assets/img/08.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="col-sm-6 col-12">
+                  <h3>لورم ایپسوم متن ساختگی با تولید</h3>
+                  <div>
+                    <span class="director"> لورم ایپسوم </span>
+                    <span class="date"> 27 مرداد 1399 </span>
+                  </div>
+                  <div class="col-6 tab-movie-detail">
+                    <div class="count">
+                      <div>16</div>
+                      <mat-icon>thumb_up</mat-icon>
+                    </div>
+
+                    <div class="count">
+                      <div>12</div>
+                      <mat-icon> mode_comment</mat-icon>
+                    </div>
+
+                    <div class="count">
+                      <div>1500</div>
+                      <mat-icon>remove_red_eye</mat-icon>
+                    </div>
+                  </div>
+                  <div class="summary">
+                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و
+                    با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه
+                    و مجله
+                  </div>
+                </div>
+              </div>
+
+              <div class="tab-movie">
+                <div class="col-sm-6 col-12">
+                  <img
+                    style="width: 100%; height: 230px"
+                    src="../../../../assets/img/04.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="col-sm-6 col-12">
+                  <h3>لورم ایپسوم متن ساختگی با تولید</h3>
+                  <div>
+                    <span class="director"> لورم ایپسوم </span>
+                    <span class="date"> 27 مرداد 1399 </span>
+                  </div>
+                  <div class="col-6 tab-movie-detail">
+                    <div class="count">
+                      <div>16</div>
+                      <mat-icon>thumb_up</mat-icon>
+                    </div>
+
+                    <div class="count">
+                      <div>12</div>
+                      <mat-icon> mode_comment</mat-icon>
+                    </div>
+
+                    <div class="count">
+                      <div>1500</div>
+                      <mat-icon>remove_red_eye</mat-icon>
+                    </div>
+                  </div>
+                  <div class="summary">
+                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و
+                    با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه
+                    و مجله
+                  </div>
+                </div>
+              </div>
+            </div>
+          </mat-tab>
+          <mat-tab label="اجتماعی">
+            <div class="tab-container">
+              <div class="tab-movie">
+                <div class="col-sm-6 col-12">
+                  <img
+                    style="width: 100%; height: 230px"
+                    src="../../../../assets/img/09.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="col-sm-6 col-12">
+                  <h3>لورم ایپسوم متن ساختگی با تولید</h3>
+                  <div>
+                    <span class="director"> لورم ایپسوم </span>
+                    <span class="date"> 27 مرداد 1399 </span>
+                  </div>
+                  <div class="col-6 tab-movie-detail">
+                    <div class="count">
+                      <div>16</div>
+                      <mat-icon>thumb_up</mat-icon>
+                    </div>
+
+                    <div class="count">
+                      <div>12</div>
+                      <mat-icon> mode_comment</mat-icon>
+                    </div>
+
+                    <div class="count">
+                      <div>1500</div>
+                      <mat-icon>remove_red_eye</mat-icon>
+                    </div>
+                  </div>
+                  <div class="summary">
+                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و
+                    با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه
+                    و مجله
+                  </div>
+                </div>
+              </div>
+
+              <div class="tab-movie">
+                <div class="col-sm-6 col-12">
+                  <img
+                    style="width: 100%; height: 230px"
+                    src="../../../../assets/img/02.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="col-sm-6 col-12">
+                  <h3>لورم ایپسوم متن ساختگی با تولید</h3>
+                  <div>
+                    <span class="director"> لورم ایپسوم </span>
+                    <span class="date"> 27 مرداد 1399 </span>
+                  </div>
+                  <div class="col-6 tab-movie-detail">
+                    <div class="count">
+                      <div>16</div>
+                      <mat-icon>thumb_up</mat-icon>
+                    </div>
+
+                    <div class="count">
+                      <div>12</div>
+                      <mat-icon> mode_comment</mat-icon>
+                    </div>
+
+                    <div class="count">
+                      <div>1500</div>
+                      <mat-icon>remove_red_eye</mat-icon>
+                    </div>
+                  </div>
+                  <div class="summary">
+                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و
+                    با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه
+                    و مجله
+                  </div>
+                </div>
+              </div>
+
+              <div class="tab-movie">
+                <div class="col-sm-6 col-12">
+                  <img
+                    style="width: 100%; height: 230px"
+                    src="../../../../assets/img/08.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="col-sm-6 col-12">
+                  <h3>لورم ایپسوم متن ساختگی با تولید</h3>
+                  <div>
+                    <span class="director"> لورم ایپسوم </span>
+                    <span class="date"> 27 مرداد 1399 </span>
+                  </div>
+                  <div class="col-6 tab-movie-detail">
+                    <div class="count">
+                      <div>16</div>
+                      <mat-icon>thumb_up</mat-icon>
+                    </div>
+
+                    <div class="count">
+                      <div>12</div>
+                      <mat-icon> mode_comment</mat-icon>
+                    </div>
+
+                    <div class="count">
+                      <div>1500</div>
+                      <mat-icon>remove_red_eye</mat-icon>
+                    </div>
+                  </div>
+                  <div class="summary">
+                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و
+                    با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه
+                    و مجله
+                  </div>
+                </div>
+              </div>
+            </div>
+          </mat-tab>
+          <mat-tab label="اکشن"> Content 3 </mat-tab>
+          <mat-tab label="اسکار"> Content 3 </mat-tab>
+          <mat-tab label="برترین ها"> Content 3 </mat-tab>
+        </mat-tab-group>
+        <div style="margin-top: 20px">
+          <div class="title">
+            <h3>داغ ترین ارزیابی ها</h3>
+            <div>
+              <button mat-icon-button>
+                <mat-icon> navigate_next</mat-icon>
+              </button>
+              <button mat-icon-button>
+                <mat-icon> navigate_before </mat-icon>
+              </button>
+            </div>
+          </div>
+          <mat-divider></mat-divider>
+          <div class="movie-container row">
+            <div class="col-sm-6 col-12 movie">
+              <img
+                style="width: 100%; height: 230px"
+                src="../../../../assets/img/01.jpg"
+              />
+              <div class="movie-name">لورم ایپسوم متن ساختگی با تولید</div>
+              <div class="movie-detail">
+                <div style="padding: 0px" class="col-6">
+                  <span>لورم ایپسوم</span>
+                  <span class="date">27 مرداد 1399</span>
+                </div>
+                <div class="col-6 detail-container">
+                  <div class="count">
+                    <div>16</div>
+                    <mat-icon>thumb_up</mat-icon>
+                  </div>
+
+                  <div class="count">
+                    <div>12</div>
+                    <mat-icon> mode_comment</mat-icon>
+                  </div>
+
+                  <div class="count">
+                    <div>1500</div>
+                    <mat-icon>remove_red_eye</mat-icon>
+                  </div>
+                </div>
+              </div>
+              <div class="summary">
+                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله
+              </div>
+            </div>
+            <div class="col-sm-6 col-12 movie">
+              <img
+                style="width: 100%; height: 230px"
+                src="../../../../assets/img/05.jpg"
+              />
+              <div class="movie-name">لورم ایپسوم متن ساختگی با تولید</div>
+              <div class="movie-detail">
+                <div style="padding: 0px" class="col-6">
+                  <span> لورم ایپسوم </span>
+                  <span class="date"> 27 مرداد 1399 </span>
+                </div>
+                <div class="col-6 detail-container">
+                  <div class="count">
+                    <div>16</div>
+                    <mat-icon>thumb_up</mat-icon>
+                  </div>
+
+                  <div class="count">
+                    <div>12</div>
+                    <mat-icon> mode_comment</mat-icon>
+                  </div>
+
+                  <div class="count">
+                    <div>1500</div>
+                    <mat-icon>remove_red_eye</mat-icon>
+                  </div>
+                </div>
+              </div>
+              <div class="summary">
+                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله
+              </div>
+            </div>
+            <div class="col-sm-6 col-12 movie">
+              <img
+                style="width: 100%; height: 230px"
+                src="../../../../assets/img/03.jpg"
+              />
+              <div class="movie-name">لورم ایپسوم متن ساختگی با تولید</div>
+              <div class="movie-detail">
+                <div style="padding: 0px" class="col-6">
+                  <span> لورم ایپسوم </span>
+                  <span class="date"> 27 مرداد 1399 </span>
+                </div>
+                <div class="col-6 detail-container">
+                  <div class="count">
+                    <div>16</div>
+                    <mat-icon>thumb_up</mat-icon>
+                  </div>
+
+                  <div class="count">
+                    <div>12</div>
+                    <mat-icon> mode_comment</mat-icon>
+                  </div>
+
+                  <div class="count">
+                    <div>1500</div>
+                    <mat-icon>remove_red_eye</mat-icon>
+                  </div>
+                </div>
+              </div>
+              <div class="summary">
+                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله
+              </div>
+            </div>
+            <div class="col-sm-6 col-12 movie">
+              <img
+                style="width: 100%; height: 230px"
+                src="../../../../assets/img/04.jpg"
+              />
+              <div class="movie-name">لورم ایپسوم متن ساختگی با تولید</div>
+              <div class="movie-detail">
+                <div style="padding: 0px" class="col-6">
+                  <span> لورم ایپسوم </span>
+                  <span class="date"> 27 مرداد 1399 </span>
+                </div>
+                <div class="col-6 detail-container">
+                  <div class="count">
+                    <div>16</div>
+                    <mat-icon>thumb_up</mat-icon>
+                  </div>
+
+                  <div class="count">
+                    <div>12</div>
+                    <mat-icon> mode_comment</mat-icon>
+                  </div>
+
+                  <div class="count">
+                    <div>1500</div>
+                    <mat-icon>remove_red_eye</mat-icon>
+                  </div>
+                </div>
+              </div>
+              <div class="summary">
+                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-bar col-sm-3 col-10">
+      <mat-card>
+        <h3>دسته بندی ها</h3>
+        <div class="category-container row">
+          <div class="col-5 category">کمدی</div>
+          <div class="col-5 category">اکشن</div>
+          <div class="col-5 category">انیمیشن</div>
+          <div class="col-5 category">ترسناک</div>
+          <div class="col-5 category">علمی تخیلی</div>
+          <div class="col-5 category">مستند</div>
+          <div class="col-5 category">موزیکال</div>
+          <div class="col-5 category">هندی</div>
+          <div class="col-5 category">عاشقانه</div>
+        </div>
+      </mat-card>
+      <div class="slider-container">
+        <swiper [config]="evaluatorSlide">
+          <div>
+            <mat-card class="comment">
+              <div class="comment-slide">
+                <div class="comment-body">
+                  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                  استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و
+                  مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی
+                  تکنولوژی مورد نیاز
+                </div>
+                <div class="comment-avatar">
+                  <mat-card-header>
+                    <div
+                      mat-card-avatar
+                      style="
+                        background-image: url('../../../../assets/img/profile.jpeg');
+                        background-size: cover;
+                      "
+                    ></div>
+                    <mat-card-title class="avatar-title">
+                      محمد نجفی
+                    </mat-card-title>
+                    <mat-card-subtitle> برنامه نویس </mat-card-subtitle>
+                  </mat-card-header>
+                </div>
+              </div>
+            </mat-card>
+          </div>
+
+          <div>
+            <mat-card class="comment">
+              <div class="comment-slide">
+                <div class="comment-body">
+                  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                  استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و
+                  مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی
+                  تکنولوژی مورد نیاز
+                </div>
+                <div class="comment-avatar">
+                  <mat-card-header>
+                    <div
+                      mat-card-avatar
+                      style="
+                        background-image: url('../../../../assets/img/09.jpg');
+                        background-size: cover;
+                      "
+                    ></div>
+                    <mat-card-title class="avatar-title">
+                      محمد نجفی
+                    </mat-card-title>
+                    <mat-card-subtitle> برنامه نویس </mat-card-subtitle>
+                  </mat-card-header>
+                </div>
+              </div>
+            </mat-card>
+          </div>
+
+          <div>
+            <mat-card class="comment">
+              <div class="comment-slide">
+                <div class="comment-body">
+                  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                  استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و
+                  مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی
+                  تکنولوژی مورد نیاز
+                </div>
+                <div class="comment-avatar">
+                  <mat-card-header>
+                    <div
+                      mat-card-avatar
+                      style="
+                        background-image: url('../../../../assets/img/10.jpg');
+                        background-size: cover;
+                      "
+                    ></div>
+                    <mat-card-title class="avatar-title">
+                      محمد نجفی
+                    </mat-card-title>
+                    <mat-card-subtitle> برنامه نویس </mat-card-subtitle>
+                  </mat-card-header>
+                </div>
+              </div>
+            </mat-card>
+          </div>
+        </swiper>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+</div>
+<app-footer></app-footer>

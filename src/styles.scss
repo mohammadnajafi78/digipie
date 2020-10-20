@@ -1,1 +1,64 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~video.js/dist/video-js.min.css";
+// @import "~videojs-overlay/src/plugin.scss";
+@import "~swiper/swiper-bundle.min.css";
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  padding: 0px;
+}
+
+@font-face {
+  font-family: "shabnam";
+  src: url("/assets/fonts/Shabnam-FD.eot");
+  src: url("/assets/fonts/Shabnam-FD.eot?#iefix") format("embedded-opentype"),
+    url("/assets/fonts/Shabnam-FD.woff") format("woff"),
+    url("/assets/fonts/Shabnam-FD.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+a,
+p,
+span:not(.vjs-icon-placeholder),
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+div:not(.vjs-play-progress):not(.vjs-volume-level):not(.video_ima-fullscreen-div):not(.video_ima-mute-div):not(.video_ima-play-pause-div),
+ul,
+li,
+table,
+tr,
+td,
+button,
+input,
+mat-toolbar,
+mat-card {
+  font-family: shabnam !important;
+}
+.video_ima-controls-div {
+  direction: ltr;
+}
+a,
+a:visited,
+a:hover,
+a:active {
+  color: inherit;
+}
+
+.table {
+  width: 100%;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

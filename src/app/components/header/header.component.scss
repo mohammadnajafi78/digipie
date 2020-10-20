@@ -1,0 +1,21 @@
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+h3 {
+  margin: 0px 16px 0px 20px;
+}
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+}
+.nav-item {
+  font-size: 15px;
+}
+
+.btn-container {
+  button {
+    margin: 0px 10px;
+  }
+}

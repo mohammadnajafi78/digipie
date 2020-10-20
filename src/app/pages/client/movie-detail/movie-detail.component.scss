@@ -1,0 +1,54 @@
+.detail-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 24px;
+}
+.name {
+  font-weight: 600;
+  font-size: 16px;
+}
+.summary {
+  margin-top: 10px;
+  color: #7f8c8d;
+}
+.count {
+  display: flex;
+  align-items: center;
+  div {
+    margin-bottom: 5px;
+  }
+}
+.movie-detail {
+  margin-top: 6px;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  mat-icon {
+    font-size: 18px;
+    color: #7f8c8d;
+  }
+}
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 40px; /* половина ширины и высоты */
+  margin: 10px;
+}
+.avatar-container {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.evaluator-name {
+  font-weight: 600;
+}
+.subtitle {
+  color: #0000008a;
+  font-size: 13px;
+}
+.player-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}

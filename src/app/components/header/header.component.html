@@ -1,0 +1,27 @@
+<mat-toolbar class="mat-elevation-z8" color="primary" >
+  <div
+  *ngIf="isSmallScreen"
+  style="margin-left: 16px; cursor: pointer"
+  (click)="settingService.drawer$.next(true)"
+>
+  <mat-icon style="color: white"> menu </mat-icon>
+</div>
+<h3> دیجی پای </h3>
+<div *ngIf="!isSmallScreen" class="toolbar"  >
+
+    <div class="row col-4 nav-bar" >
+      <span class="nav-item" > خانه </span>
+      <span class="nav-item" > فیلم ها </span>
+      <span class="nav-item" > بازی ها </span>
+      <span class="nav-item" > کتاب ها </span>
+      <span class="nav-item" > درباره ما </span>
+    </div>
+
+    <div dir="ltr" class="col-4  btn-container" *ngIf="!isSmallScreen"  >
+      <button mat-raised-button > ورود کاربر </button>
+      <button mat-raised-button > ورود ارزیاب </button>
+    </div>
+
+  </div>
+</mat-toolbar>
+

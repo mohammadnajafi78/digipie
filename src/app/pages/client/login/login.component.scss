@@ -1,0 +1,58 @@
+@import "../../../theme.scss";
+$primary_color: mat-color($primary, default);
+.main {
+  padding: 60px;
+}
+
+.login {
+  height: 100vh;
+  background-image: url(../../../../assets/img/bg-01.jpg);
+  background-size: cover;
+}
+
+@media only screen and (max-width: 768px) {
+  .main {
+    padding: 10px;
+  }
+}
+.error {
+  color: red;
+}
+.login-container {
+  display: flex;
+  justify-content: center;
+  //align-items: center;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+}
+
+mat-card {
+  margin-top: 20px;
+}
+
+.button-container {
+  direction: ltr;
+}
+
+.form-container {
+  text-align: center;
+  mat-form-field {
+    margin-top: 10px;
+  }
+}
+
+.title {
+  text-align: center;
+
+  mat-card-title {
+    margin-bottom: 20px;
+  }
+}
+
+mat-error {
+  margin: 0px !important;
+  font-size: 13px;
+}

@@ -1,0 +1,51 @@
+<app-header></app-header>
+<div class="main">
+  <mat-card class="col-12">
+    <div class="avatar-container">
+      <div class="avatar">
+        <img src="../../../../assets/img/profile.jpeg" />
+      </div>
+    </div>
+    <div style="text-align: center">
+      <button mat-raised-button>انتخاب عکس</button>
+    </div>
+    <div class="form-container">
+      <mat-form-field class="col-md-3 col-sm-6 col-12" appearance="fill">
+        <mat-label> نام </mat-label>
+        <input type="text" matInput />
+      </mat-form-field>
+      <mat-form-field class="col-md-3 col-sm-6 col-12" appearance="fill">
+        <mat-label> نام خانوادگی </mat-label>
+        <input type="text" matInput />
+      </mat-form-field>
+      <mat-form-field class="col-md-3 col-sm-6 col-12" appearance="fill">
+        <mat-label> جنسیت </mat-label>
+        <mat-select>
+          <mat-option value="female"> زن </mat-option>
+          <mat-option value="male"> مرد </mat-option>
+        </mat-select>
+      </mat-form-field>
+      <mat-form-field class="col-md-3 col-sm-6 col-12" appearance="fill">
+        <mat-label> وضعیت تاهل </mat-label>
+        <mat-select>
+          <mat-option value="single"> مجرد </mat-option>
+          <mat-option value="married"> متاهل </mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+    <h4>علایق :</h4>
+    <div class="checkbox col-sm-6 col-12">
+      <mat-radio-button>ورزش</mat-radio-button>
+      <mat-radio-button>تفریح</mat-radio-button>
+      <mat-radio-button>مطالعه</mat-radio-button>
+      <mat-radio-button>سایر</mat-radio-button>
+    </div>
+    <mat-form-field
+      style="margin-top: 40px"
+      class="col-12"
+      appearance="outline"
+    >
+      <textarea rows="5" placeholder="معرفی خود" matInput></textarea>
+    </mat-form-field>
+  </mat-card>
+</div>

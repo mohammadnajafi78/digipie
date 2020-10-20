@@ -1,0 +1,53 @@
+<div class="login">
+  <div class="main">
+    <div class="login-container">
+      <!--  برای شماره تلفن  -->
+      <mat-card class="mat-elevation-z2 col-md-3 col-sm-8 col-11 card">
+        <div style="text-align: center">
+          <img
+            class="logo"
+            src="../../../../assets/img/search-girl-illustration (1).jpg"
+            alt=""
+          />
+        </div>
+        <div class="title">
+          <mat-card-title> وارد شوید </mat-card-title>
+        </div>
+
+        <div class="form-container">
+          <mat-form-field class="col-11" appearance="fill">
+            <mat-label> شماره موبایل </mat-label>
+            <input matInput type="text" [formControl]="phoneControl" />
+            <mat-icon matSuffix> phone </mat-icon>
+            <mat-error *ngIf="phoneControl.hasError('required')">
+              شماره تلفن الزامی است
+            </mat-error>
+            <mat-error *ngIf="phoneControl.hasError('pattern')">
+              شماره تلفن 10 یا 11 رقم انگلیسی است
+            </mat-error>
+          </mat-form-field>
+          <mat-form-field class="col-11" appearance="fill">
+            <mat-label> سال تولد </mat-label>
+            <input matInput type="number" [formControl]="ageControl" />
+            <mat-error *ngIf="ageControl.hasError('required')">
+              سال تولد الزامی است
+            </mat-error>
+            <mat-error *ngIf="ageControl.hasError('min')">
+              حداقل سال تولد 1300 است
+            </mat-error>
+            <mat-error *ngIf="ageControl.hasError('max')">
+              حداکثر سال تولد 1399 است
+            </mat-error>
+            <mat-icon matSuffix>date_range</mat-icon>
+          </mat-form-field>
+        </div>
+
+        <div class="button-container">
+          <button class="btn" mat-raised-button color="primary">
+            ارسال کد
+          </button>
+        </div>
+      </mat-card>
+    </div>
+  </div>
+</div>
