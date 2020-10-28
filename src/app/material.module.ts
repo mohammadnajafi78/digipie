@@ -23,6 +23,7 @@ import { MatProgressSpinnerModule } from "@angular/material/progress-spinner";
 import { MatChipsModule } from "@angular/material/chips";
 import { MatCheckboxModule } from "@angular/material/checkbox";
 import { MatRadioModule } from "@angular/material/radio";
+import { MatExpansionModule } from "@angular/material/expansion";
 @NgModule({
   exports: [
     MatCardModule,
@@ -49,6 +50,7 @@ import { MatRadioModule } from "@angular/material/radio";
     MatChipsModule,
     MatCheckboxModule,
     MatRadioModule,
+    MatExpansionModule,
   ],
 })
 export class MaterialModule {}

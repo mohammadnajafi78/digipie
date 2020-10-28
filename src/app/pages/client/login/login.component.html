@@ -26,20 +26,6 @@
               شماره تلفن 10 یا 11 رقم انگلیسی است
             </mat-error>
           </mat-form-field>
-          <mat-form-field class="col-11" appearance="fill">
-            <mat-label> سال تولد </mat-label>
-            <input matInput type="number" [formControl]="ageControl" />
-            <mat-error *ngIf="ageControl.hasError('required')">
-              سال تولد الزامی است
-            </mat-error>
-            <mat-error *ngIf="ageControl.hasError('min')">
-              حداقل سال تولد 1300 است
-            </mat-error>
-            <mat-error *ngIf="ageControl.hasError('max')">
-              حداکثر سال تولد 1399 است
-            </mat-error>
-            <mat-icon matSuffix>date_range</mat-icon>
-          </mat-form-field>
         </div>
 
         <div class="button-container">

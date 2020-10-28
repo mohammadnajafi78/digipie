@@ -27,9 +27,29 @@
       </mat-form-field>
       <mat-form-field class="col-md-3 col-sm-6 col-12" appearance="fill">
         <mat-label> وضعیت تاهل </mat-label>
-        <mat-select>
+        <mat-select [(ngModel)]="marriedStatus">
           <mat-option value="single"> مجرد </mat-option>
           <mat-option value="married"> متاهل </mat-option>
+        </mat-select>
+      </mat-form-field>
+      <mat-form-field
+        *ngIf="marriedStatus === 'married'"
+        class="col-md-3 col-sm-6 col-12"
+        appearance="fill"
+      >
+        <mat-label> تعداد فرزند </mat-label>
+        <input type="number" value="0" matInput />
+      </mat-form-field>
+      <mat-form-field class="col-md-3 col-sm-6 col-12" appearance="fill">
+        <mat-label> تحصیلات </mat-label>
+        <mat-select>
+          <mat-option value="highSchool"> زیر دیپلم </mat-option>
+          <mat-option value="diploma"> دیپلم </mat-option>
+          <mat-option value="associateDegree"> فوق دیپلم</mat-option>
+          <mat-option value="master"> کارشناسی </mat-option>
+          <mat-option value="postMster"> کارشناسی ارشد </mat-option>
+          <mat-option value="docter"> دکترا </mat-option>
+          <mat-option value="postDoctor"> فوق دکترا </mat-option>
         </mat-select>
       </mat-form-field>
     </div>
@@ -47,5 +67,8 @@
     >
       <textarea rows="5" placeholder="معرفی خود" matInput></textarea>
     </mat-form-field>
+    <div dir="ltr" style="margin: 10px">
+      <button mat-raised-button>ویرایش پروفایل</button>
+    </div>
   </mat-card>
 </div>

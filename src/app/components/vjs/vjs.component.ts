@@ -20,7 +20,7 @@ export class VjsComponent implements OnInit {
       },
       poster: this.poster,
       fluid: true,
-      height: 500,
+      // height: 400,
       controls: true,
       playbackRates: [0.5, 1, 1.5, 2],
     });

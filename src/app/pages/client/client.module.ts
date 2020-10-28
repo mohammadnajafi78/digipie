@@ -1,3 +1,4 @@
+import { EvalationDialogComponent } from "./../../components/evalation-dialog/evalation-dialog.component";
 import { FooterComponent } from "./../../components/footer/footer.component";
 import { ClientTemplateComponent } from "./../../templates/client-template/client-template.component";
 import { HeaderComponent } from "./../../components/header/header.component";
@@ -32,6 +33,7 @@ const routes: Routes = [
     FooterComponent,
     LoginComponent,
     ProfileComponent,
+    EvalationDialogComponent,
   ],
   imports: [
     CommonModule,
