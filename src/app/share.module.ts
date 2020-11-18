@@ -1,3 +1,4 @@
+import { StarRatingComponent } from "./components/star-rating/star-rating.component";
 import { VjsComponent } from "./components/vjs/vjs.component";
 import { SettingService } from "./services/setting.service";
 import { NgModule } from "@angular/core";

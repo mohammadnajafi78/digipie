@@ -1,0 +1,10 @@
+mat-icon {
+  width: unset !important;
+}
+button {
+  width: unset !important;
+}
+button:disabled,
+button[disabled] {
+  color: none;
+}

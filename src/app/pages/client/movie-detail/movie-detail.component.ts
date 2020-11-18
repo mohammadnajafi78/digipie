@@ -11,9 +11,17 @@ import { ViewportScroller } from "@angular/common";
 })
 export class MovieDetailComponent implements OnInit {
   slideConfig: SwiperConfigInterface = {
-    spaceBetween: 10,
-    slidesPerView: 2,
+    spaceBetween: 30,
+    slidesPerView: 1,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
     breakpoints: {
+      480: {
+        slidesPerView: 2,
+        spaceBetween: 10,
+      },
       640: {
         slidesPerView: 3,
         spaceBetween: 5,
@@ -32,16 +40,15 @@ export class MovieDetailComponent implements OnInit {
       },
     },
   };
-
   constructor(
     private readonly dialog: MatDialog,
-    private _vps: ViewportScroller
+    private vps: ViewportScroller
   ) {}
 
   ngOnInit(): void {}
 
   scrollFn(anchor: string): void {
-    this._vps.scrollToAnchor(anchor);
+    this.vps.scrollToAnchor(anchor);
   }
 
   openDialog(title: string, content: string, icon: string): void {

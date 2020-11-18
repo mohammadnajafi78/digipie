@@ -6,9 +6,9 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  margin-bottom: 20px;
 }
 .img-container {
-  text-align: center;
   img {
     width: 260px;
     height: 385px;
@@ -21,7 +21,7 @@
 .name {
   font-weight: 600;
   font-size: 16px;
-  margin-bottom: 20px;
+  margin: 20px 0px;
 }
 .detail-item {
   margin-top: 10px;
@@ -35,6 +35,11 @@
 .evalator-item {
   display: flex;
   align-items: center;
+  div:first-child {
+    font-size: 16px;
+    font-weight: 600;
+    margin-left: 10px;
+  }
 }
 .avalator-avatar {
   border-radius: 40px;
@@ -47,11 +52,12 @@
   flex-direction: column;
   // align-items: center;
   margin: 0px !important;
-  div:first-child {
-    font-weight: 600;
-    color: #000;
-    margin-bottom: 10px;
-  }
+}
+
+.evalation-card-name {
+  font-weight: 600;
+  color: #000;
+  margin-bottom: 10px;
 }
 
 .emoji-title {
@@ -66,7 +72,7 @@
   margin-top: 20px;
 }
 mat-expansion-panel-header {
-  height: 120px !important;
+  height: 140px !important;
 }
 .checkbox-section {
   text-align: center;
@@ -99,8 +105,8 @@ mat-expansion-panel-header {
   cursor: pointer;
   span:first-child {
     margin-left: 10px;
-    height: 35px !important;
-    width: 35px;
+    height: 30px;
+    width: 30px;
   }
   img {
     width: 100%;
@@ -167,6 +173,9 @@ mat-expansion-panel-header {
   display: flex;
   flex-wrap: wrap;
 }
+.jcsb {
+  justify-content: space-between;
+}
 .tab-container {
   display: flex;
   flex-wrap: wrap;
@@ -204,50 +213,7 @@ mat-expansion-panel-header {
   height: 180px !important;
   border-radius: 10px;
 }
-@media only screen and (max-width: 1200px) {
-  .main {
-    margin: 10px;
-  }
-}
-@media only screen and (max-width: 768px) {
-  .main {
-    margin: 10px;
-  }
-  .icon-card {
-    height: 310px;
-    width: 85px;
-    img {
-      height: 30px;
-      width: 30px;
-    }
-  }
-  .swiper-slide {
-    img {
-      height: 138px;
-    }
-  }
-  .gallery {
-    margin: 0px;
-    margin-top: 30px;
-  }
-}
-@media only screen and (max-width: 640px) {
-  .swiper-slide {
-    img {
-      height: 120px;
-    }
-  }
-}
-@media only screen and (max-width: 420px) {
-  .swiper-slide {
-    img {
-      height: 100px;
-    }
-  }
-}
 
-.comment-container {
-}
 .comment {
   margin: 10px 0px;
 }
@@ -275,4 +241,149 @@ mat-expansion-panel-header {
 }
 .set-comment {
   margin: 20px 0px;
+}
+.avatar-name {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.rate {
+  margin-top: -10px;
+}
+.gallery-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.age-img {
+  img {
+    width: 100px;
+    height: 150px;
+    position: absolute;
+    /* direction: ltr; */
+    top: 290px;
+    left: 23px;
+    z-index: 1;
+  }
+}
+@media only screen and (min-width: 1700px) {
+  .age-img {
+    img {
+      left: 140px;
+    }
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .main {
+    margin: 10px;
+  }
+  .age-img {
+    img {
+      left: 50px;
+    }
+  }
+}
+@media only screen and (max-width: 1300px) {
+  .age-img {
+    img {
+      left: -23px;
+    }
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .age-img {
+    img {
+      left: 90px;
+    }
+  }
+}
+@media only screen and (max-width: 1100px) {
+  .age-img {
+    img {
+      left: 60px;
+    }
+  }
+}
+@media only screen and (max-width: 1080px) {
+  .age-img {
+    img {
+      left: 0px;
+    }
+  }
+}
+@media only screen and (max-width: 800px) {
+  .age-img {
+    img {
+      left: -30px;
+    }
+  }
+}
+@media only screen and (max-width: 770px) {
+  .age-img {
+    img {
+      left: 50px;
+    }
+  }
+}
+@media only screen and (max-width: 768px) {
+  .main {
+    margin: 10px;
+  }
+  .img-container {
+    text-align: center;
+  }
+  .icon-card {
+    height: 310px;
+    width: 85px;
+    img {
+      height: 30px;
+      width: 30px;
+    }
+  }
+  .swiper-slide {
+    img {
+      height: 138px;
+    }
+  }
+  .gallery {
+    margin: 0px;
+    margin-top: 30px;
+  }
+  .age-img {
+    img {
+      left: -25px;
+    }
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .swiper-slide {
+    img {
+      height: 133px;
+    }
+  }
+  .age-img {
+    img {
+      left: 0px;
+    }
+  }
+}
+@media only screen and (max-width: 580px) {
+  .age-img {
+    img {
+      left: 80px;
+    }
+  }
+}
+@media only screen and (max-width: 400px) {
+  .swiper-slide {
+    img {
+      height: 150px;
+    }
+  }
+  .age-img {
+    img {
+      left: 20px;
+    }
+  }
 }

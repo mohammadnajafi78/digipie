@@ -11,6 +11,7 @@ import { SwiperModule } from "ngx-swiper-wrapper";
 import { MovieDetailComponent } from "./movie-detail/movie-detail.component";
 import { LoginComponent } from "./login/login.component";
 import { ProfileComponent } from "./profile/profile.component";
+import { StarRatingComponent } from "src/app/components/star-rating/star-rating.component";
 const routes: Routes = [
   {
     path: "",
@@ -34,6 +35,7 @@ const routes: Routes = [
     LoginComponent,
     ProfileComponent,
     EvalationDialogComponent,
+    StarRatingComponent,
   ],
   imports: [
     CommonModule,
